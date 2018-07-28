@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/app_bar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_300sdp"
+                android:background="@color/white">
+
+                <ImageView
+                    android:id="@+id/iv_product"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@color/white"
+                    android:scaleType="centerCrop"
+                    android:clickable="true"/>
+
+                <com.github.ybq.android.spinkit.SpinKitView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/spin_kit"
+                    style="@style/SpinKitView.Large.Circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_centerInParent="true"
+                    app:SpinKit_Color="@color/colorAccent" />
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/btn_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_anchorGravity="bottom|end"
+                    app:backgroundTint="@color/white"
+                    android:tint="@color/colorPrimaryDark"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/_30sdp"
+                    android:layout_marginRight="@dimen/_15sdp"
+                    android:layout_alignParentEnd="true"
+                    app:srcCompat="@drawable/liked_icon" />
+
+
+
+
+                <com.tech.ac.sys.cv.TextviewRegular
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="?actionBarSize"
+                    android:text="Anil chourasiya"
+                    android:background="@color/white"
+                    android:textStyle="bold"
+                    android:padding="@dimen/_10sdp"
+                    android:textSize="@dimen/_12sdp"
+                    android:scaleType="centerCrop"
+                    android:gravity="left|center"
+                    android:layout_alignParentBottom="true"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="bottom"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".5dp"
+                    android:background="@color/gray"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_margin"
+                    android:text="@string/large_text" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

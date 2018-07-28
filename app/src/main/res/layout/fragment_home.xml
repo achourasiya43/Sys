@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+                android:background="@color/main_bg"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context="com.tech.ac.sys.fragments.HomeFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:stackFromEnd="true"
+                    app:reverseLayout="true"
+                    android:dividerHeight="0dp"
+                    android:paddingBottom="@dimen/_50sdp"
+                    app:layoutManager="android.support.v7.widget.LinearLayoutManager">
+
+                </android.support.v7.widget.RecyclerView>
+
+            <com.github.ybq.android.spinkit.SpinKitView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/spin_kit"
+                style="@style/SpinKitView.Large.Circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                app:SpinKit_Color="@color/text_view_color"
+                android:visibility="gone"/>
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

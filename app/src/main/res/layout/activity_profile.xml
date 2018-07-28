@@ -1,0 +1,274 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/header_bg">
+
+        <com.tech.ac.sys.cv.TextviewRegular
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Profile"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_14sdp"/>
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_icon"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_12sdp"/>
+
+        <ImageView
+            android:id="@+id/iv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit_icon"
+            android:padding="@dimen/_14sdp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/profile_Img"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_bg"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/profile_Img"
+                android:layout_marginTop="@dimen/_55sdp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_14sdp"
+                        android:src="@drawable/user_active_icon"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                    <com.tech.ac.sys.cv.TextviewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Username"
+                        android:textSize="@dimen/_10sdp"/>
+
+                    <EditText
+                        android:id="@+id/ed_user_Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@null"
+                        android:hint="Jonh Deo"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_12sdp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_14sdp"
+                        android:src="@drawable/mail_active_icon"
+                        android:tint="@color/colorPrimaryDark"/>
+
+                    <com.tech.ac.sys.cv.TextviewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Email Address"
+                        android:textSize="@dimen/_10sdp"/>
+
+                    <EditText
+                        android:id="@+id/ed_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@null"
+                        android:clickable="false"
+                        android:enabled="false"
+                        android:hint="JonhDeo@mindiii.com"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_12sdp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cv_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_14sdp"
+                        android:src="@drawable/pin_active_icon"
+                        android:tint="@color/colorPrimary"/>
+
+                    <com.tech.ac.sys.cv.TextviewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Address"
+                        android:textSize="@dimen/_10sdp"/>
+
+                    <com.tech.ac.sys.cv.TextviewRegular
+                        android:id="@+id/tv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:hint="Write your address"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_12sdp"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:orientation="horizontal"
+                    app:cardElevation="@dimen/_2sdp">
+
+                    <ImageView
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/_14sdp"
+                        android:src="@drawable/ico_phone_call"
+                        android:tint="@color/colorPrimary"/>
+
+                    <com.tech.ac.sys.cv.TextviewRegular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="Phone"
+                        android:textSize="@dimen/_10sdp"/>
+
+                    <EditText
+                        android:id="@+id/ed_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:background="@null"
+                        android:hint="+1-9857645657"
+                        android:inputType="number"
+                        android:imeOptions="actionDone"
+                        android:maxLines="1"
+                        android:textSize="@dimen/_12sdp"/>
+
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/card"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    card_view:cardBackgroundColor="@color/white"
+                    card_view:cardElevation="2dp"
+                    card_view:cardMaxElevation="8dp">
+
+                    <Button
+                        android:id="@+id/btn_update"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="0dp"
+                        android:background="@null"
+                        android:text="Update"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary"/>
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_Img_rounded"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_140sdp"
+                android:src="@drawable/profile_bg"
+                app:civ_border_width="0.5dp"
+                app:civ_border_color="@color/colorPrimaryDark"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</LinearLayout>

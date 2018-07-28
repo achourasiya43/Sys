@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/menu_bottom1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/add_file"
+            android:title="@string/add_products" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ico_edit_profile"
+            android:title="User Profile" />
+
+        <item
+            android:id="@+id/nav_allmember"
+            android:icon="@drawable/all_member"
+            android:title="All Member" />
+
+        <item
+            android:id="@+id/nav_send_request"
+            android:icon="@drawable/send_notification"
+            android:title="Send Notification"/>
+
+        <item
+            android:id="@+id/nav_requirement"
+            android:icon="@drawable/chat_icon"
+            android:title="Post Requirement"/>
+
+        <item
+            android:id="@+id/nav_webview"
+            android:icon="@drawable/orignal_view"
+            android:title="Go to Web"/>
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout_icon"
+            android:title="Logout" />
+
+    </group>
+    <group android:checkableBehavior="single">
+
+    </group>
+
+
+
+    <group
+        android:id="@+id/menu_bottom2"
+        android:checkableBehavior="single">
+
+
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom4"
+        android:checkableBehavior="single">
+
+
+    </group>
+
+
+    <group
+        android:id="@+id/menu_bottom6"
+        android:checkableBehavior="single">
+
+
+    </group>
+
+    <group
+        android:id="@+id/menu_webview"
+        android:checkableBehavior="single">
+
+
+    </group>
+
+    <group
+        android:id="@+id/menu_bottom8"
+        android:checkableBehavior="single">
+
+
+    </group>
+
+
+
+</menu>

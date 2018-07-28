@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    tools:context="com.tech.ac.sys.activity.AllUserListActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@drawable/header_bg"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/spin_kit">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="@color/colorPrimaryDark"
+            android:src="@drawable/back_icon"/>
+
+        <com.tech.ac.sys.cv.TextviewLight
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Users"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_all_user"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:dividerHeight="0dp"
+        app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/spin_kit"
+        style="@style/SpinKitView.Large.Circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        app:SpinKit_Color="@color/text_view_color"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:background="@color/white"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_3sdp"
+        app:cardBackgroundColor="@color/white"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardElevation="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_user_image"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_width="@dimen/_50sdp"
+                app:civ_border_width="0.5dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ico_profile"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:orientation="vertical">
+                <com.tech.ac.sys.cv.TextviewRegular
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp"
+                    android:maxLines="2"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:text="Anil chourasiya"/>
+
+                <com.tech.ac.sys.cv.TextviewLight
+                    android:id="@+id/tv_new_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/gray"
+                    android:textSize="16sp"
+                    android:maxLines="1"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:text="1 new post feed"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

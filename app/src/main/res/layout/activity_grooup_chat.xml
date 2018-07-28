@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_comments"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="10dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@drawable/back_icon"
+                android:tint="@color/colorPrimaryDark"/>
+
+            <com.tech.ac.sys.cv.TextviewLight
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Post Your Requirement"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16dp"/>
+
+            <ImageView
+                android:id="@+id/iv_delete_all_chat"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ico_delete"
+                android:padding="@dimen/_10sdp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_alignParentRight="true"/>
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"
+            android:layout_alignParentTop="true"
+            android:dividerHeight="0dp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:layout_toEndOf="@+id/tv_no_comments"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_composMsg"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/white"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="80dp"
+                android:gravity="center"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@drawable/rounded_corner_primary">
+
+                <EditText
+                    android:id="@+id/ed_chatting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:padding="12dp"
+                    android:textSize="16sp"
+                    android:text=""
+                    android:hint="Write a comments here..."/>
+
+            </RelativeLayout>
+
+
+
+            <com.tech.ac.sys.cv.TextviewRegular
+                android:id="@+id/tv_send_msg"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/circle_solid"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="Send"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

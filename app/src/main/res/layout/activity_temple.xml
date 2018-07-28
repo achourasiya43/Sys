@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/splash_bg"
+    tools:context="com.tech.ac.sys.activity.TempleActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/email_verify"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Your email address is not verified please verify it and login again"
+        android:textSize="@dimen/_14sdp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_margin="@dimen/_16sdp"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="25dp"
+        android:text="SignOut"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_margin="@dimen/_16sdp"
+        android:background="@drawable/rounded_background_primary"/>
+
+</LinearLayout>

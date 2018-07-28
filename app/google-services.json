@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "439716908213",
+    "firebase_url": "https://systech-be5ca.firebaseio.com",
+    "project_id": "systech-be5ca",
+    "storage_bucket": "systech-be5ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439716908213:android:15aa8dbfd1c98d8a",
+        "android_client_info": {
+          "package_name": "com.tech.ac.sys"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439716908213-ljaq04b4i62qtsjha97k9tefba2rrbs3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFjq45keni5TWN8oTjmqkSvZcfT6MoeG0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
